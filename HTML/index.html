@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japtini Web App</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/7e71741018.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="/CSS/dist/fontawesome-free-6.1.2-web/css/fontawesome.min.css"> -->
+</head>
+<body>
+<main class="logistics">
+    <div class="logistics-item sidebar">
+        <div class="sidebar-contents">
+            <div class="logistics-logo">
+                <img src="/Images/Japtini_Logo.png" alt="Japtini_fake_logo" class="Logo">
+            </div>
+            <div class="logistics-sidebar-menu">
+                <li class="list_item"><i class="fa fa-home" aria-hidden="true"></i>Home</li>
+                <li class="list_item"><i class="fa fa-truck" aria-hidden="true"></i>Book a Truck</li>
+                <li class="list_item"><i class="fa fa-id-card" aria-hidden="true"></i>My Order</li>
+                <li class="list_item"><i class="fa fa-calendar" aria-hidden="true"></i>Transaction</li>
+                <li class="list_item"><i class="fa fa-pie-chart" aria-hidden="true"></i>Resources</li>
+                <li class="list_item"><i class="fa fa-user-o" aria-hidden="true"></i>My Account</li>
+                <li class="list_item"><i class="fa fa-id-card" aria-hidden="true"></i>Invoices</li>
+                <li class="list_item"><i class="fa fa-id-card" aria-hidden="true"></i>Reports</li>
+            </div>
+        </div>
+    </div>
+    <div class="logistics-item main-body logistics-span">
+        <div class="logistics-top-bar-fixed">
+            <div class="app-top">
+                <div class="app-top-item left-app-top-item">
+                    <!-- Search input -->
+                    <div class="searchbox">
+                        <div class="searchInputWrapper">
+                          <input class="searchInput" type="text" placeholder='search for trucks, deals and more'>
+                             <i class="searchInputIcon fa fa-search"></i>
+                          </input>
+                        </div>
+                      </div>
+                </div>
+                <div class="app-top-item span-2">
+                    <div class="profile_list">
+                        <div class="profile_list_item item_"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
+                        <div class="profile_list_item item_"><i class="fa fa-bell" aria-hidden="true"></i></i></div>
+                        <div class="profile_list_item"><img src="/Images/face_sample.jfif" alt="sample" class="profile_pics"></div>
+                        <div class="profile_list_item">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle btncustom" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-globe" aria-hidden="true"></i> Choose Language
+                                </button>
+                                <!-- <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                    
+                                </ul> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- This is where the contents will stay -->
+        <div>
+            <!-- Create order -->
+            <div class="createorder">
+                <div class="createorder_contents">
+                    <div class="createorder_contents_items">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <li class="float_right">...</li>
+                              <h5 class="card-title">80</h5>
+                              <p class="card-text">Completed Trips</p>
+                            </div>
+                        </div>                          
+                        <div class="card row-span" style="width: 18rem;">
+                            <div class="card-body">
+                              
+                            </div>
+                        </div>                          
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                              <li class="float_right">...</li>
+                              <h5 class="card-title">56</h5>
+                              <p class="card-text">Pending Trips</p>
+                        </div>
+                        </div>                          
+                    </div>
+                    <div class="createorder_contents_btn">
+                        <button class="float-end order_button">Create Order</button>
+                    </div>
+                </div>
+
+                <!-- table -->
+                <div class="tabe_record pt-5">
+                    <div class="transaction_history">
+                        <li class="transaction_menu">...</li>
+                        <p>Transaction History</p>
+                        <table class="table caption-top">
+                            <thead>
+                              <tr>
+                                <th scope="col">Tag ID</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Transaction</th>
+                                <th scope="col">Goods</th>
+                                <th scope="col">Date</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">#8662555</th>
+                                <td>Completed</td>
+                                <td><span class="double_strike">N</span>10,000</td>
+                                <td>Maggi</td>
+                                <td>3rd August 2022</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">#8662555</th>
+                                <td>Completed</td>
+                                <td><span class="double_strike">N</span>10,000</td>
+                                <td>Maggi</td>
+                                <td>3rd August 2022</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">#8662555</th>
+                                <td>Completed</td>
+                                <td><span class="double_strike">N</span>10,000</td>
+                                <td>Maggi</td>
+                                <td>3rd August 2022</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="/CSS/dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="/JS/index.js"></script>
+</body>
+</html>

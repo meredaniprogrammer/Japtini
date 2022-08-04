@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Main body styling */
+.logistics_app {
+    margin: 2%;
+}
+
+/*General Sidebar styling*/
+.sidebar {
+    background-color: #504e4e2b;
+    width: 18rem;
+    height: 100vh;
+    overflow: auto;
+}
+/*Japtini Logo Styling*/
+.app_logo {
+    width: 75%;
+}
+.logistics-logo {
+    padding-bottom: 5rem;
+}
+/*Styling for container */
+
+/*Sidebar Menu Styling*/
+
+.list_item {
+    padding: 1rem 1rem;
+    color: #646161;
+    cursor: pointer;
+    list-style: none;
+}
+.list_item:hover {
+    border-radius: 1.7rem;
+    background-color: #fff;
+    color: rgb(235, 145, 55);
+}
+.list_item:active {
+    color: rgb(235, 145, 55);
+}
+
+.logistics-item {
+    padding: 3em;
+}
+/*Column for the top fixed*/
+/* .app-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.span-2 {
+    grid-column: span 2;
+}
+.left-app-top-item {
+    margin-left: -9rem;
+} */
+/* .profile_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 6rem;
+    margin-left: 30em;
+} */
+.profile_list_item {
+    width: 4rem;
+    cursor: pointer;
+}
+.profile_pics {
+    border-radius: 4rem;
+    width: 70%;
+    height: 100%;
+}
+.fa-bell, .fa-lightbulb-o {
+    border-radius: 3em;
+    border: 1px solid #a1a1a1;
+    padding: 0.7rem 0.9rem;
+    color: #a1a1a1 !important;
+}
+.fa{
+    padding-right: 0.7rem !important;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:800;
+}
+
+/*Fixed top styling*/
+  .searchInput {
+    width: 25rem;
+    height: 3.5rem;
+    padding: 0 1rem; 
+    border-radius: 0.7rem;
+    border-color: #a1a1a185;
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  ::placeholder {
+    color: #a1a1a1;
+  }
+  
+  /* hide the placeholder text on focus */
+  :focus::placeholder {
+    text-indent: -999px
+  }
+  
+  .searchInput:focus {
+    outline: none;
+    transform: scale(1.1);
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .searchInputIcon {
+    color: #a1a1a1;
+    transition: all 0.1s ease-in-out;
+    position: relative;
+    left: -2em;
+  }
+  
+  .container:focus-within > 
+  .searchInputWrapper > .searchInputIcon {
+    right: 0.2rem;
+  }
+  .btn-secondary {
+    color: #a1a1a1 !important;
+    background-color: #fff !important;
+    border-color: #6c757d;
+}
+.dropdown-toggle::after {
+    color: rgb(231, 145, 59);
+}
+.btncustom {
+    border-radius: 1.1rem !important;
+}
+/* Create order */
+.createorder {
+    margin-top: 3rem;
+}
+.createorders_card {
+    border: 1px solid #a1a1a1;
+}
+.card-body {
+    height: 9em !important;
+    padding: 1.4rem 1.4rem !important;
+}
+.card {
+    border-radius: 0.9rem !important;
+}
+.card-title {
+    margin-top: 1.7rem;
+    font-size: 2rem;
+}
+.card-title p {
+    color: #a1a1a1;
+    font-size: 25px;
+    
+}
+.float_right {
+    float: right;
+    list-style: none;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.order_button {
+    padding: 1rem 1.6rem;
+    border-radius: 0.8rem;
+    background-color: rgb(240, 150, 61);
+    color: #fff;
+    border: none;
+    letter-spacing: 0.2rem;
+    margin-right: 2rem;
+}
+.caption-top{
+    width: 35em !important;
+    padding: 2em !important;
+}
+.transaction_history {
+    border: 1px solid #a1a1a1;
+    width: 38em;
+    margin-left: -8.5em;
+    padding: 2em;
+    border-radius: 1em;
+}
+.transaction_menu {
+    position: relative;
+    left: 32em;
+    list-style: none;
+}
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: none !important;
+    border-radius: 2rem !important;
+}
+.table>:not(caption)>*>* {
+    padding: 0.5rem 0.5rem;
+    background-color: var(--bs-table-bg);
+    border: 1px solid #a1a1a1;
+    border-radius: 2em !important;
+    border-bottom-right-radius: 3rem !important;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+tbody, td, tfoot, th, thead, tr {
+    border-color: #a1a1a1 !important;
+    /* border-style: solid; */
+    border-width: 0;
+    border-radius: 2em !important;
+}
+
+@media (min-width: 50em) {
+    .logistics {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .logistics-span {
+        grid-column: span 3;
+    }
+    .profile_list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 6rem;
+        margin-left: 30em;
+    }
+    .app-top {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .span-2 {
+        grid-column: span 2;
+    }
+    .left-app-top-item {
+        margin-left: -9rem;
+    }
+    .createorder_contents{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .createorder_contents_items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-left: -9rem;
+        width: 3rem;
+    }
+    .row-span {
+        grid-row-end: span 2;
+    }
+}
